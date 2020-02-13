@@ -1,0 +1,430 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #141414;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-family: 'Unica One';
+}
+
+#main{
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#main .container{
+	display: flex;
+	justify-content: center;
+	margin-top: 130px;
+}
+
+#main .content{
+	font-size: 25px;
+	margin: 0px 50px;
+}
+
+#main .side{
+	display: flex;
+	align-items: center;
+	writing-mode: vertical-lr;
+    text-orientation: upright;
+	font-size: 40px;
+	letter-spacing: 25px;
+	margin: 0px 30px;
+}
+
+.side-dragon{
+	background-image: url(../img/r.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-grow: 6;
+	margin-bottom: 60px;
+}
+
+#side-dragon-left{
+	
+}
+
+#side-dragon-right{
+	transform: scaleX(-1); 
+}
+
+#main .container .content .links{
+	text-align-last: justify;
+	text-justify: inter-character;
+	width: 50%;
+	align-self: center;
+}
+
+@supports not (text-justify: inter-character){
+	#main .container .content .links{
+		letter-spacing: 10px;
+	}
+}
+
+#main .container .content{
+	display: flex;
+	flex-direction: column;
+}
+
+#main .container .content .social{
+}
+
+a:link{
+	text-decoration: none;
+	color: white;
+}
+
+a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+.link{
+	margin: 30px 0px;
+}
+
+#about{
+	display: flex;
+	background-image: url(../img/tattoo_girl.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	min-height: 100vh;
+}
+
+#about .container{
+	flex-grow: 2;
+}
+
+#about .container .content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+#about .container .content .row{
+	margin: 100px 35px 0px;
+	max-width: 190px;
+	font-size: 20px;
+}
+
+#about-images-content-middle{
+	margin-top: 150px;
+}
+
+#about .container .content .row .image{
+	max-width: 190px;
+	border-radius: 50%;
+}
+
+#about .container .content .row .description{
+	margin-top: 40px;
+	font-size: 22px;
+}
+
+#about .title{
+	font-size: 60px;
+	margin-bottom: 60px;
+}
+
+#about .subtitle{
+	font-size: 60px;
+	margin: 60px 0px 80px;
+}
+
+#gallery{
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
+#gallery .container{
+	display: flex;
+	justify-content: center;
+}
+
+#gallery .container .content{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+#gallery .container .content .row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#gallery .container .content .row .cell{
+	margin: 10px 20px;
+	justify-content: center;
+	display: flex;
+}
+
+#gallery .container .content .row .cell img{
+	width: 100%;
+}
+
+#gallery .title{
+	font-size: 60px;
+	margin: 40px 0px;
+	text-align: center;
+}
+
+#gallery .subtitle{
+	font-size: 60px;
+	margin: 40px 0px;
+	text-align: center;
+}
+
+#contact{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	text-align: center;
+	background-image: url(../img/tlopieski.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact .container{
+	display: flex;
+	flex-direction: column;
+}
+
+#contact .container .input{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#contact .container .input input{
+	font-size: 40px;
+	font-family: 'Unica One';
+	text-align: center;
+	margin: 30px 0px;
+	width: 50%;
+	background-color: #141414;
+	color: rgba(255, 255, 255, 0.5);
+ 	border-top-style: hidden;
+  	border-right-style: hidden;
+ 	border-left-style: hidden;
+	border-width: thick
+}
+
+#contact .text{
+	font-size: 60px;
+	margin: 40px;
+}
+
+#contact .subtext{
+	font-size: 40px;
+	font-family: 'Unica One';
+	color: rgba(255, 255, 255, 0.3);
+	margin: 30px 0px;
+}
+
+#contact .textbox{
+	width: 700px;
+	height: 250px;
+	background-color: #141414;
+	border-width: thick;
+}
+
+#contact .container button{
+	margin-top: 30px;
+	background-color: #141414;
+	width: 200px;
+	height: 70px;
+	font-size: 40px;
+	font-family: 'Unica One';
+	color: white;
+	border-width: thick;
+}
+
+#footer{
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 22px;
+	border-top: 4px solid white;
+}
+
+#footer h3{
+	margin: 40px 0px ;
+}
+
+
+/*global*/
+.text{
+	text-transform: uppercase;
+}
+
+.shake h1:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*social buttons*/
+.social{
+	margin-top: 100px;
+}
+
+.social ul {
+  text-align: center;
+  padding-left: 0px;
+}
+
+.social li {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.social li:first-child {
+  margin-left: 0px;
+}
+
+.social li:last-child {
+  margin-right: 0px;
+}
+
+
+.facebook {
+  width: 50px;
+  height: 50px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.facebook .border {
+  background: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.facebook .border:hover {
+  background: #3b5998;
+  border-color: #436aaf;
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-facebook {
+  font-size: 25px;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+
+
+/** Twitter **/
+
+.twitter {
+  width: 50px;
+  height: 50px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.twitter .border {
+  background: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.twitter .border:hover {
+  background: #00aced;
+  border-color: #72c6e6;
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-twitter {
+  font-size: 25px;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+
+
+/** Instagram **/
+
+.instagram {
+  width: 50px;
+  height: 50px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.instagram .border {
+  background: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.instagram .border:hover {
+  background: #517fa4;
+  border-color: #7495af;
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-instagram {
+  font-size: 25px;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
